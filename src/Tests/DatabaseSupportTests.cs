@@ -1,7 +1,7 @@
 ﻿using DbUp.Builder;
 using DbUp.Tests.Common;
 
-namespace DbUp.NewProvider.Tests;
+namespace DbUp.Db2.Tests;
 
 public class DatabaseSupportTests : DatabaseSupportTestsBase
 {

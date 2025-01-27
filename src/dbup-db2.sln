@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbup-newprovider", "dbup-newprovider\dbup-newprovider.csproj", "{2A7189BD-96CE-41CA-9100-E1B1DD10FF40}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbup-db2", "dbup-db2\dbup-db2.csproj", "{2A7189BD-96CE-41CA-9100-E1B1DD10FF40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{8CE634FE-6772-408E-9340-909F6218F8F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{8CE634FE-6772-408E-9340-909F6218F8F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{2BB18839-D96E-4697-902D-1900A6B75F69}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,9 +25,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{77157734-01DA-4AA3-A15C-504013343B29}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		dbup-newprovider.sln.DotSettings = dbup-newprovider.sln.DotSettings
+		dbup-db2.sln.DotSettings = dbup-db2.sln.DotSettings
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "example", "example\example.csproj", "{86EFB54F-6889-4A90-9A91-7542F920B85E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +45,20 @@ Global
 		{8CE634FE-6772-408E-9340-909F6218F8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CE634FE-6772-408E-9340-909F6218F8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE634FE-6772-408E-9340-909F6218F8F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EFB54F-6889-4A90-9A91-7542F920B85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EFB54F-6889-4A90-9A91-7542F920B85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EFB54F-6889-4A90-9A91-7542F920B85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EFB54F-6889-4A90-9A91-7542F920B85E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{62E5FE92-E288-4E09-964D-F92AF0E49131} = {5DA19CA9-8039-46D6-B474-021943582785}
-		{77157734-01DA-4AA3-A15C-504013343B29} = {2BB18839-D96E-4697-902D-1900A6B75F69}
 		{5DA19CA9-8039-46D6-B474-021943582785} = {2BB18839-D96E-4697-902D-1900A6B75F69}
+		{77157734-01DA-4AA3-A15C-504013343B29} = {2BB18839-D96E-4697-902D-1900A6B75F69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5909C878-ADA5-44A6-B409-05AB64233351}
 	EndGlobalSection
 EndGlobal

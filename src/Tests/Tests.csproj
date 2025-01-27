@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>net462;net8</TargetFrameworks>
     <AssemblyName>Tests</AssemblyName>
-    <RootNamespace>DbUp.NewProvider.Tests</RootNamespace>
+    <RootNamespace>DbUp.Db2.Tests</RootNamespace>
     <!--    <ImplicitUsings>enable</ImplicitUsings> Can't use implict usings with net46 -->
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dbup-newprovider\dbup-newprovider.csproj"/>
+    <ProjectReference Include="..\dbup-db2\dbup-db2.csproj"/>
     <PackageReference Include="DbUp.Tests.Common" Version="5.0.37"/>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
     <PackageReference Include="xunit" Version="2.6.6"/>

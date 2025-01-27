@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>DbUp makes it easy to deploy and upgrade SQL Server databases. This package adds Db2 support.</Description>
+    <Title>DbUp Db2 Support</Title>
+    <Company>DbUp Contributors</Company>
+    <Product>DbUp</Product>
+    <Copyright>Copyright © DbUp Contributors 2015</Copyright>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+    <AssemblyName>dbup-db2</AssemblyName>
+    <RootNamespace>DbUp.Db2</RootNamespace>
+    <PackageId>dbup-db2</PackageId>
+    <AssemblyOriginatorKeyFile>../dbup.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <RepositoryUrl>https://github.com/DbUp/dbup-db2.git</RepositoryUrl>
+    <PackageIcon>dbup-icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Visible="false" Include="../dbup-icon.png" Pack="True" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-core" Version="6.0.4" />
+    <PackageReference Include="Net.IBM.Data.Db2" Version="8.0.0.300" />
+  </ItemGroup>
+
+</Project>
