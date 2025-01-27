@@ -1,6 +1,7 @@
 ﻿using DbUp;
 using DbUp.Db2;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,8 @@ namespace S2P.db.startup
             foreach (var item in clientInstances.Where(folderName => Directory.Exists(Path.Combine(Environment.CurrentDirectory, folderName!))))
                 upgradeEngineBuilder.WithScriptsFromFileSystem(item);
 
-            var upgradeEngine = upgradeEngineBuilder.WithVariablesDisabled().Build();
+            ILoggerFactory factory = new LoggerFactory().AddSerilog(Log.Logger);
+            var upgradeEngine = upgradeEngineBuilder.WithVariablesDisabled().LogTo(factory).Build();
 
             var result = upgradeEngine.PerformUpgrade();
 
